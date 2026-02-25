@@ -27,12 +27,13 @@ def static_image_index(distro, architectures):
                 ],
             )
 
-def static_image(distro, arch):
+def static_image(distro, arch, packages):
     """static and debug images and tests for a distro/arch
 
     Args:
         distro: name of the distribution
         arch: the target architecture
+        packages: distro-specific packages to include
     """
     for (user, uid, workdir) in USER_VARIANTS:
         oci_image(
@@ -45,10 +46,9 @@ def static_image(distro, arch):
                 "SSL_CERT_FILE": "/etc/ssl/certs/ca-certificates.crt",
             },
             tars = [
-                deb.package(arch, distro, "base-files"),
-                deb.package(arch, distro, "netbase"),
-                deb.package(arch, distro, "tzdata"),
-                deb.package(arch, distro, "media-types"),
+                deb.package(arch, distro, pkg)
+                for pkg in packages
+            ] + [
                 "//common:rootfs",
                 "//common:passwd",
                 "//common:home",

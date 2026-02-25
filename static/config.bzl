@@ -4,5 +4,18 @@ STATIC_ARCHITECTURES = {
     "debian13": ["amd64", "arm64", "arm", "s390x", "ppc64le"],
 }
 
-# STATIC_PACKAGES is somewhat unecessary as the image has remained
-# relative unchanged over the years, if we need to, we can add it in
+STATIC_PACKAGES = {
+    "debian12": [
+        "base-files",
+        "netbase",
+        "tzdata",
+        "media-types",
+    ],
+    "debian13": [
+        "base-files",
+        "netbase",
+        "tzdata",
+        "tzdata-legacy",
+        "media-types",
+    ],
+}

@@ -91,6 +91,17 @@
 		{
 			"arch": "amd64",
 			"dependencies": [],
+			"key": "tzdata-legacy_2025b-4-p-deb13u1_amd64",
+			"name": "tzdata-legacy",
+			"sha256": "394399a3ebf508bcc95748f5c9ce445a0194b47ebe78ed741cdb70e18db4c65c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260127T202811Z/pool/main/t/tzdata/tzdata-legacy_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
 			"key": "media-types_13.0.0_amd64",
 			"name": "media-types",
 			"sha256": "0788e4b0b72db1bcf74a19cb24c3511e7770ad0b341f0f30e361701c3072f53e",
@@ -250,6 +261,17 @@
 			"sha256": "19a87f5184503fb5eeffe97bd7e107e193ac28107789a1e85331ed9381040f17",
 			"urls": [
 				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "tzdata-legacy_2025b-4-p-deb13u1_arm64",
+			"name": "tzdata-legacy",
+			"sha256": "394399a3ebf508bcc95748f5c9ce445a0194b47ebe78ed741cdb70e18db4c65c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260127T202811Z/pool/main/t/tzdata/tzdata-legacy_2025b-4+deb13u1_all.deb"
 			],
 			"version": "2025b-4+deb13u1"
 		},
@@ -421,6 +443,17 @@
 		{
 			"arch": "armhf",
 			"dependencies": [],
+			"key": "tzdata-legacy_2025b-4-p-deb13u1_armhf",
+			"name": "tzdata-legacy",
+			"sha256": "394399a3ebf508bcc95748f5c9ce445a0194b47ebe78ed741cdb70e18db4c65c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260127T202811Z/pool/main/t/tzdata/tzdata-legacy_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
 			"key": "media-types_13.0.0_armhf",
 			"name": "media-types",
 			"sha256": "0788e4b0b72db1bcf74a19cb24c3511e7770ad0b341f0f30e361701c3072f53e",
@@ -586,6 +619,17 @@
 		{
 			"arch": "s390x",
 			"dependencies": [],
+			"key": "tzdata-legacy_2025b-4-p-deb13u1_s390x",
+			"name": "tzdata-legacy",
+			"sha256": "394399a3ebf508bcc95748f5c9ce445a0194b47ebe78ed741cdb70e18db4c65c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260127T202811Z/pool/main/t/tzdata/tzdata-legacy_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
 			"key": "media-types_13.0.0_s390x",
 			"name": "media-types",
 			"sha256": "0788e4b0b72db1bcf74a19cb24c3511e7770ad0b341f0f30e361701c3072f53e",
@@ -745,6 +789,17 @@
 			"sha256": "19a87f5184503fb5eeffe97bd7e107e193ac28107789a1e85331ed9381040f17",
 			"urls": [
 				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "tzdata-legacy_2025b-4-p-deb13u1_ppc64el",
+			"name": "tzdata-legacy",
+			"sha256": "394399a3ebf508bcc95748f5c9ce445a0194b47ebe78ed741cdb70e18db4c65c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260127T202811Z/pool/main/t/tzdata/tzdata-legacy_2025b-4+deb13u1_all.deb"
 			],
 			"version": "2025b-4+deb13u1"
 		},
