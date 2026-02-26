@@ -25,6 +25,7 @@ packages:
   - netbase
   - openssl
   - tzdata
+  - tzdata-legacy
   - media-types
   - zlib1g
   - libzstd1

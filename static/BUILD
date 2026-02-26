@@ -1,6 +1,6 @@
 load("//private/util:tar.bzl", "tar")
+load(":config.bzl", "STATIC_ARCHITECTURES", "STATIC_DISTROS", "STATIC_PACKAGES")
 load(":static.bzl", "static_image", "static_image_index")
-load(":config.bzl", "STATIC_ARCHITECTURES", "STATIC_DISTROS")
 
 package(default_visibility = ["//visibility:public"])
 
@@ -20,6 +20,7 @@ tar(
     static_image(
         arch = arch,
         distro = distro,
+        packages = STATIC_PACKAGES[distro],
     )
     for distro in STATIC_DISTROS
     for arch in STATIC_ARCHITECTURES[distro]
