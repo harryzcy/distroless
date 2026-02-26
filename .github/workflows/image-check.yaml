@@ -50,11 +50,14 @@ jobs:
 
       - name: Diff All Images
         id: diff
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
         run: |
           ./private/tools/diff/diff.bash \
             --query-bazel --registry-spawn-https \
-            --head-ref ${{ github.head_ref }} \
-            --base-ref ${{ github.event.pull_request.base.ref }} \
+            --head-ref "$HEAD_REF" \
+            --base-ref "$BASE_REF" \
             --set-github-output-on-diff \
             --skip-image-index \
             --jobs $(($(nproc --all) * 2)) \
