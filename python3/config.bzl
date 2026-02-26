@@ -43,6 +43,7 @@ PYTHON_PACKAGES = {
         "zlib1g",
         "libcom-err2",
         "libcrypt1",
+        "libc-bin",
         "libgssapi-krb5-2",
         "libk5crypto3",
         "libkeyutils1",
