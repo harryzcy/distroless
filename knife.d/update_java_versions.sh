@@ -26,11 +26,3 @@ function update_java_versions_debian13() {
     sed -i -r -e "s/${major_version}\\.[0-9]+\\.[0-9]+/${version}/g" java/testdata/java${major_version}*debian13.yaml
   done
 }
-
-# deprecatd with debian12
-function update_java_versions_debian12() {
-  # java17 only
-  local version=$(jq -r '.packages.[] | select((.arch=="amd64") and (.name=="openjdk-17-jre-headless")) | .version | split("+")[0]' private/repos/deb/bookworm_java.lock.json)
-  local major_version=$(echo "$version" | cut -d. -f 1)
-  sed -i -r -e "s/${major_version}\\.[0-9]+\\.[0-9]+/${version}/g" java/testdata/java17*debian12.yaml
-}
