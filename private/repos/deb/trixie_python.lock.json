@@ -58,6 +58,17 @@
 		{
 			"arch": "amd64",
 			"dependencies": [],
+			"key": "libc-bin_2.41-12-p-deb13u1_amd64",
+			"name": "libc-bin",
+			"sha256": "5c7fce98b72c1b663326b6062c3e46d30b21063142364d6d09d1663c1ac7e6d3",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc-bin_2.41-12+deb13u1_amd64.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
 			"key": "libffi8_3.4.8-2_amd64",
 			"name": "libffi8",
 			"sha256": "0ebdc340de33333639c3c63874cd4b15ac2e83dfa1ef3053b7eefaf4919f4f68",
@@ -318,6 +329,17 @@
 				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/e/expat/libexpat1_2.7.1-2_arm64.deb"
 			],
 			"version": "2.7.1-2"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libc-bin_2.41-12-p-deb13u1_arm64",
+			"name": "libc-bin",
+			"sha256": "73429db9f1c5132dae8bd7c9d303b808fcf663cd0bfe875f71a822d9461387bd",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc-bin_2.41-12+deb13u1_arm64.deb"
+			],
+			"version": "2.41-12+deb13u1"
 		},
 		{
 			"arch": "arm64",

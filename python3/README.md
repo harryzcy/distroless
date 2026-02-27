@@ -10,8 +10,10 @@ Specifically, the image contains everything in the [base image](../base/README.m
     * 3.11 on debian 12
     * 3.13 on debian 13
 * No shell
-* No support for ldconfig based functions like `ctypes.util.find_library()` (potential [workaround](../../../issues/1854))
 
+## ldconfig and ctypes
+
+On debian13+ we include a pre-generated `ld.so.cache` to support user/framework calls to `ctypes.util.find_library()`. If a user modifies the image by adding a new library, it will not be found in the cache without calling ldconfig to refresh the cache.
 
 ## Usage
 

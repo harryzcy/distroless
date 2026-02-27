@@ -19,6 +19,7 @@ packages:
   - libcrypt1 # TODO: glibc library for -lcrypt; maybe should be in cc?
   - libdb5.3t64
   - libexpat1
+  - libc-bin
   - libffi8
   - libgssapi-krb5-2
   - libk5crypto3

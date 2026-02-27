@@ -2,9 +2,9 @@
 
 load("@container_structure_test//:defs.bzl", "container_structure_test")
 load("@rules_oci//oci:defs.bzl", "oci_image", "oci_image_index")
-load("//private/util:tar.bzl", "tar")
 load("//common:variables.bzl", "DEBUG_MODE", "USERS")
 load("//private/util:deb.bzl", "deb")
+load("//private/util:tar.bzl", "tar")
 
 DISTRO_VERSION = {
     "debian12": "3.11",
@@ -65,7 +65,7 @@ def python3_image(distro, arch, packages):
                 tars = [
                     deb.package(arch, distro, pkg, "python")
                     for pkg in packages
-                ] + [":python_aliases_%s" % distro],
+                ] + [":python_aliases_%s" % distro] + ([":ldconfig_cache_" + arch] if distro == "debian13" else []),
             )
 
     for user in USERS:
