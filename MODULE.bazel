@@ -43,7 +43,6 @@ busybox.archive()
 use_repo(busybox, "busybox_amd64", "busybox_arm", "busybox_arm64", "busybox_ppc64le", "busybox_riscv64", "busybox_s390x")
 
 ### JAVA ###
-include("//private/repos/java_temurin:java.MODULE.bazel")
 
 ### NODE ###
 node = use_extension("//private/extensions:node.bzl", "node")

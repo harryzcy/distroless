@@ -38,9 +38,6 @@ Any other tags are considered deprecated and are no longer updated
 | gcr.io/distroless/base-nossl-debian12 | latest, nonroot, debug, debug-nonroot | amd64, arm64, arm, s390x, ppc64le |
 | gcr.io/distroless/cc-debian12         | latest, nonroot, debug, debug-nonroot | amd64, arm64, arm, s390x, ppc64le |
 | gcr.io/distroless/python3-debian12    | latest, nonroot, debug, debug-nonroot | amd64, arm64                      |
-| gcr.io/distroless/java-base-debian12  | latest, nonroot, debug, debug-nonroot | amd64, arm64, s390x, ppc64le      |
-| gcr.io/distroless/java17-debian12     | latest, nonroot, debug, debug-nonroot | amd64, arm64, s390x, ppc64le      |
-| gcr.io/distroless/java21-debian12     | latest, nonroot, debug, debug-nonroot | amd64, arm64, s390x, ppc64le      |
 | gcr.io/distroless/nodejs20-debian12   | latest, nonroot, debug, debug-nonroot | amd64, arm64, arm, s390x, ppc64le |
 | gcr.io/distroless/nodejs22-debian12   | latest, nonroot, debug, debug-nonroot | amd64, arm64, arm, s390x, ppc64le |
 | gcr.io/distroless/nodejs24-debian12   | latest, nonroot, debug, debug-nonroot | amd64, arm64, s390x, ppc64le      |
@@ -56,6 +53,7 @@ Debian 13 distroless images use the debian [UsrMerge](https://wiki.debian.org/Us
 | gcr.io/distroless/base-nossl-debian13 | latest, nonroot, debug, debug-nonroot | amd64, arm64, arm, s390x, ppc64le, riscv64 |
 | gcr.io/distroless/cc-debian13         | latest, nonroot, debug, debug-nonroot | amd64, arm64, arm, s390x, ppc64le, riscv64 |
 | gcr.io/distroless/java-base-debian13  | latest, nonroot, debug, debug-nonroot | amd64, arm64, s390x, ppc64le               |
+| gcr.io/distroless/java17-debian13     | latest, nonroot, debug, debug-nonroot | amd64, arm64, s390x, ppc64le               |
 | gcr.io/distroless/java21-debian13     | latest, nonroot, debug, debug-nonroot | amd64, arm64, s390x, ppc64le               |
 | gcr.io/distroless/java25-debian13     | latest, nonroot, debug, debug-nonroot | amd64, arm64, s390x, ppc64le               |
 | gcr.io/distroless/nodejs20-debian13   | latest, nonroot, debug, debug-nonroot | amd64, arm64, arm, s390x, ppc64le          |
@@ -218,7 +216,7 @@ $ docker run --entrypoint=sh -ti my_debug_image
 BUILD       Dockerfile  hello.py
 ```
 
-> Note: If the image you are using already has a tag, for example `gcr.io/distroless/java17-debian12:nonroot`, use the tag `debug-<existing tag>` instead, for example `gcr.io/distroless/java17-debian12:debug-nonroot`.
+> Note: If the image you are using already has a tag, for example `gcr.io/distroless/java17-debian13:nonroot`, use the tag `debug-<existing tag>` instead, for example `gcr.io/distroless/java17-debian13:debug-nonroot`.
 
 > Note: [ldd](http://man7.org/linux/man-pages/man1/ldd.1.html) is not installed in the base image as it's a shell script, you can copy it in or download it.
 
